@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Miras Bektay</title>
+    <style>
+        /* === RESET & BASE === */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Georgia', serif; 
+            background: #ffffff; 
+            color: #0b0b0b; 
+            line-height: 1.6;
+        }
+
+        /* === LAYOUT === */
+        .services_split {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* LEFT SIDE - CONTACTS */
+        .services_left {
+            width: 40%;
+            padding: 100px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .services_title {
+            font-size: 48px;
+            font-weight: 400;
+            margin-bottom: 60px;
+            letter-spacing: -0.02em;
+        }
+
+        .contact_block {
+            margin-bottom: 40px;
+        }
+
+        .services_label {
+            font-family: sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: rgba(11,11,11,0.5);
+            margin-bottom: 8px;
+        }
+
+        .services_value {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        /* SOCIALS */
+        .services_socials {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .services_social {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(0,0,0,0.1);
+            font-family: sans-serif;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .services_social:hover {
+            background: #0b0b0b;
+            color: #fff;
+        }
+
+        /* RIGHT SIDE - MAP */
+        .services_right {
+            width: 60%;
+            padding: 40px;
+            background: #f9f9f9;
+        }
+
+        .services_map {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: grayscale(0.2) contrast(0.9); /* Карта выглядит эстетичнее */
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .services_split { flex-direction: column; }
+            .services_left, .services_right { width: 100%; }
+            .services_left { padding: 50px 20px; }
+            .services_right { height: 400px; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header header--solid">
+      <a class="logo" href="Index.html">MIRAS BEKTAY</a>
+    </header>
+    <main class="services_split">
+        <section class="services_left">
+            <h1 class="services_title">Контакты</h1>
+
+            <div class="contact_block">
+                <p class="services_label">Телефон</p>
+                <span class="services_value">+771 158 7630</span>
+            </div>
+
+            <div class="contact_block">
+                <p class="services_label">Электронная почта</p>
+                <span class="services_value">hello@mirasbektay.com</span>
+            </div>
+
+            <div class="contact_block">
+                <p class="services_label">Адрес офиса</p>
+                <span class="services_value">г. Астана, пр. Мангилик Ел, 12</span>
+            </div>
+        </section>
+
+        <section class="services_right">
+            <div class="services_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.7077303030064!2d71.42398457635678!3d51.12782784102919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245851415273d2d%3A0x608e8b0a1d95514b!2z0JzQsNC90LPQuNCy0LjQutC-0LUg0JXQu9C10Lsu!5e0!3m2!1sru!2skz!4v1714488582987!5m2!1sru!2skz" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
